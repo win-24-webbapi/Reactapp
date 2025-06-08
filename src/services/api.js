@@ -32,19 +32,20 @@ const notificationApi = axios.create({
 
 // User Service API calls
 export const userService = {
-    login: (credentials) => userApi.post('/auth/login', credentials),
-    register: (userData) => userApi.post('/auth/register', userData),
-    getProfile: () => userApi.get('/users/profile'),
-    updateProfile: (data) => userApi.put('/users/profile', data)
+    getUser: (id) => userApi.get(`/user/${id}`),
+    getUserByEmail: (email) => userApi.get(`/user/email/${email}`),
+    createUser: (userData) => userApi.post('/user', userData),
+    updateUser: (id, userData) => userApi.put(`/user/${id}`, userData),
+    deleteUser: (id) => userApi.delete(`/user/${id}`)
 };
 
 // Event Service API calls
 export const eventService = {
-    getEvents: () => eventApi.get('/events'),
-    getEvent: (id) => eventApi.get(`/events/${id}`),
-    createEvent: (eventData) => eventApi.post('/events', eventData),
-    updateEvent: (id, eventData) => eventApi.put(`/events/${id}`, eventData),
-    deleteEvent: (id) => eventApi.delete(`/events/${id}`)
+    getEvents: () => eventApi.get('/event'),
+    getEvent: (id) => eventApi.get(`/event/${id}`),
+    createEvent: (eventData) => eventApi.post('/event', eventData),
+    updateEvent: (id, eventData) => eventApi.put(`/event/${id}`, eventData),
+    deleteEvent: (id) => eventApi.delete(`/event/${id}`)
 };
 
 // Dashboard Service API calls
@@ -56,7 +57,11 @@ export const dashboardService = {
 
 // Notification Service API calls
 export const notificationService = {
-    getNotifications: () => notificationApi.get('/notifications'),
-    markAsRead: (id) => notificationApi.put(`/notifications/${id}/read`),
-    deleteNotification: (id) => notificationApi.delete(`/notifications/${id}`)
+    getNotifications: (userId) => notificationApi.get(`/notification/user/${userId}`),
+    getNotification: (id) => notificationApi.get(`/notification/${id}`),
+    createNotification: (notificationData) => notificationApi.post('/notification', notificationData),
+    updateNotification: (id, notificationData) => notificationApi.put(`/notification/${id}`, notificationData),
+    deleteNotification: (id) => notificationApi.delete(`/notification/${id}`),
+    markAsRead: (id) => notificationApi.put(`/notification/${id}/mark-as-read`),
+    markAllAsRead: (userId) => notificationApi.put(`/notification/user/${userId}/mark-all-as-read`)
 }; 

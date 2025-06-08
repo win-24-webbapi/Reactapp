@@ -19,7 +19,7 @@ export default function Profile() {
     const fetchUser = async () => {
       try {
         setLoading(true);
-        const response = await userService.getProfile();
+        const response = await userService.getUserByEmail("test@example.com");
         setUser(response.data);
       } catch (err) {
         setError(err.message);
