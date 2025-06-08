@@ -1,0 +1,164 @@
+.eventsWrap {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--vt-grey-20);
+  border-radius: 18px;
+  padding: 32px 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: var(--vt-primary-100);
+  letter-spacing: 0.5px;
+}
+
+.addButton {
+  background-color: var(--vt-primary-100);
+  color: var(--vt-grey-10);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(242,108,249,0.10);
+  transition: background 0.2s;
+}
+
+.addButton:hover {
+  background-color: var(--vt-primary-90);
+}
+
+.eventForm {
+  background: var(--vt-grey-10);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(183,176,219,0.06);
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1.5px solid var(--vt-grey-30);
+  border-radius: 6px;
+  background: var(--vt-grey-10);
+}
+
+.formGroup textarea {
+  min-height: 100px;
+}
+
+button {
+  background: var(--vt-primary-100);
+  color: var(--vt-grey-10);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(242,108,249,0.10);
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--vt-primary-90);
+}
+
+.eventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.eventCard {
+  background: var(--vt-grey-10);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(55, 67, 125, 0.08);
+  display: flex;
+  gap: 19px;
+  align-items: flex-start;
+  padding: 18px 28px 18px 16px;
+  border-left: 4px solid var(--vt-primary-40);
+  transition: box-shadow 0.16s, border-color 0.16s;
+}
+
+.eventCard:hover {
+  box-shadow: 0 6px 24px rgba(242,108,249,0.12);
+  border-left: 4px solid var(--vt-primary-100);
+}
+
+.eventIcon {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--vt-primary-40);
+}
+
+.eventMain {
+  flex: 1 1 0;
+}
+
+.eventTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--vt-secondary-100);
+  margin-bottom: 3px;
+}
+
+.eventDesc {
+  color: var(--vt-secondary-90);
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.eventDetails {
+  display: flex;
+  gap: 16px;
+  color: var(--vt-grey-70);
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.eventDate, .eventLocation, .eventPrice {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.eventDate svg, .eventLocation svg, .eventPrice svg {
+  color: var(--vt-grey-70);
+}
+
+.eventPrice {
+  color: var(--vt-primary-100);
+  font-weight: 700;
+}
+
+.eventPrice svg {
+  color: var(--vt-primary-100);
+}

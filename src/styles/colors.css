@@ -1,0 +1,41 @@
+/* Ventixe Colors */
+:root {
+  /* Secondary */
+  --vt-secondary-110: #1C2346;
+  --vt-secondary-100: #37437D;
+  --vt-secondary-90: #5562A2;
+  --vt-secondary-70: #707DBF;
+  --vt-secondary-60: #A8B4D0;
+  --vt-secondary-50: #DDDAF9;
+  /* Primary (purples/pinks) */
+  --vt-primary-100: #F26CF9;
+  --vt-primary-90: #F589FA;
+  --vt-primary-50: #FCD3FE;
+  --vt-primary-40: #FCE2FE;
+  --vt-primary-30: #FDEDFE;
+  /* Yellow */
+  --vt-yellow-100: #FFCA39;
+  --vt-yellow-90: #FFEEC3;
+  /* Greys */
+  --vt-grey-10: #FFFFFF;
+  --vt-grey-20: #F7F7F7;
+  --vt-grey-30: #EDEDED;
+  --vt-grey-40: #E0E0E1;
+  --vt-grey-50: #C3C3C4;
+  --vt-grey-60: #9F9FA1;
+  --vt-grey-70: #777779;
+  --vt-grey-80: #636365;
+  --vt-grey-90: #434345;
+  --vt-grey-100: #1E1E20;
+  /* Cool Greys */
+  --vt-coolgrey-10: #EEEFFF;
+  --vt-coolgrey-20: #E4E5F5;
+  --vt-coolgrey-30: #DDDEDD;
+  --vt-coolgrey-40: #D1D2E0;
+  --vt-coolgrey-50: #B0B1BD;
+  --vt-coolgrey-60: #8F8F99;
+  --vt-coolgrey-70: #72737A;
+  --vt-coolgrey-80: #56565C;
+  --vt-coolgrey-90: #39393D;
+  --vt-coolgrey-100: #131314;
+}
